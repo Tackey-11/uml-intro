@@ -1,4 +1,3 @@
-
 @startuml test
 title シーケンス図
 お客様-> 給仕係: 注文する
