@@ -1,0 +1,10 @@
+@startuml ユースケース図
+left to right direction
+
+rectangle ホテル宿泊予約 {
+usecase (<u>予約</u>\nextention points\nキャンペーン期間) as reserve
+usecase キャンペーン価格にする
+}
+reserve <.. キャンペーン価格にする : << extend >>
+
+@enduml
