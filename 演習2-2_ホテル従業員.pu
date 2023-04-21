@@ -4,5 +4,12 @@ left to right direction
 actor 従業員#DDDDDD;line:black;line.bold;
 actor 経営者#DDDDDD;line:black;line.bold;
 
-従業員<|-- 経営者
+rectangle ホテル {
+usecase 業務
+}
+
+従業員 --> 業務
+経営者 --> 業務
+
+従業員<|- 経営者
 @enduml
