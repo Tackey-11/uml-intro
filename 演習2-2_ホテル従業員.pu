@@ -5,11 +5,11 @@ actor 従業員#DDDDDD;line:black;line.bold;
 actor 経営者#DDDDDD;line:black;line.bold;
 
 rectangle ホテル {
-usecase 業務
+usecase 仕事
 }
 
-従業員 --> 業務
-経営者 --> 業務
+従業員 --> 仕事
+経営者 --> 仕事
 
 従業員<|- 経営者
 @enduml
