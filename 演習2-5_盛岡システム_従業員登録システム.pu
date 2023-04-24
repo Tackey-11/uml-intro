@@ -8,9 +8,11 @@ rectangle 販売管理システム {
 
 usecase (社員情報を登録) as case1
 usecase (社員情報を参照) as case2
+usecase (社員情報を修正) as case3
 }
 
 人事担当者 --> case1
 社員 --> case2
+人事担当者 --> case3
 
 @enduml
