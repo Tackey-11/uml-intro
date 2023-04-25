@@ -12,7 +12,7 @@ usecase (空室状況を閲覧する) as case1
 usecase (<u>部屋を予約する</u>\nextention \nキャンペーン期間) as case2
 usecase (空室状況を入力する) as case3
 usecase (予約の集計をする) as case4
-usecase (<u>ログイン</u>\nextention points\n会員未登録) as case5
+usecase (<u>ログイン</u>\nextention points\n利用者で会員未登録) as case5
 usecase (会員登録をする) as case6
 usecase (キャンペーン価格にする) as case7
 }
