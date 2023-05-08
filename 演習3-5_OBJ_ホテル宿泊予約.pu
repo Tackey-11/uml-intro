@@ -1,0 +1,43 @@
+@startuml 演習3-5オブジェクト図
+left to right direction
+object "<u>利用者情報1:利用者</u>" as case1_1{
+    名前=A
+    住所
+    電話番号
+}
+
+
+object "<u>301号室:部屋</u>" as case1_2 {
+    タイプ=シングル
+    価格=11000円
+    キャンペーン価格=9000円
+}
+
+
+object "<u>利用者情報2:利用者</u>" as case2_1{
+    名前=B
+    住所
+    電話番号
+}
+
+
+object "<u>303号室:部屋</u>" as case2_2 {
+    タイプ=シングル
+    価格=11000円
+    キャンペーン価格=9000円
+}
+
+
+
+object "<u>ホテル:ホテル</u>" as case3 {
+    部屋
+}
+
+case3 -- case1_2
+case3 -- case2_2
+
+case1_2 -- case1_1
+case2_2 -- case2_1
+
+
+@enduml

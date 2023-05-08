@@ -1,0 +1,26 @@
+@startuml 演習3-6オブジェクト図
+left to right direction
+
+object "<u>社員情報1:社員</u>" as case1_1 {
+    氏名=高橋洋平
+}
+
+object "<u>社員情報2:社員</u>" as case1_2 {
+    氏名=樋口正之
+}
+
+object "<u>資格1:資格</u>" as case2_1 {
+    名称=情報処理安全確保支援士
+}
+
+
+object "<u>資格2:資格" as case2_2 {
+    名称=LinuC試験Level1
+}
+
+case1_1 -- case2_1
+case1_1 -- case2_2
+
+case1_2 -- case2_2
+
+@enduml

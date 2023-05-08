@@ -17,6 +17,7 @@ usecase (会員登録をする) as case6
 usecase (キャンペーン価格にする) as case7
 }
 
+利用者 --> case6
 利用者 --> case1
 利用者 --> case2
 case2 <.. case7 :<< extend >>
@@ -25,7 +26,7 @@ case3 ..> case5 :<< include >>
 管理者 --> case4
 case4 ..> case5 :<< include >>
 case2 ..> case5 :<< include >>
-case5 <.. case6 :<< extend >>
+
 
 
 

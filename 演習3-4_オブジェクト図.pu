@@ -1,0 +1,18 @@
+@startuml 演習3-4オブジェクト図
+left to right direction
+object "<u>車情報1: 車リスト</u>" as case1{
+}
+object "<u>タイヤリスト1: タイヤリスト</u>" as case2{
+}
+object "<u>タイヤリスト2: タイヤリスト</u>" as case3{
+}
+object "<u>タイヤリスト3: タイヤリスト</u>" as case4{
+}
+object "<u>タイヤリスト4: タイヤリスト</u>" as case5{
+}
+
+case1 -- case2
+case1 -- case3
+case1 -- case4
+case1 -- case5
+@enduml

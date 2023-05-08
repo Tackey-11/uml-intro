@@ -1,0 +1,7 @@
+@startuml 演習3-4クラス図
+left to right direction
+class 車{}
+class タイヤ{}
+
+車 "1" *-- "4"タイヤ
+@enduml
