@@ -1,4 +1,4 @@
-@startuml 演習3-7
+@startuml 演習3-7オブジェクト図
 left to right direction
 object "<u>重要顧客1:重要顧客</u>" as actor1{
     名前=高橋洋平
