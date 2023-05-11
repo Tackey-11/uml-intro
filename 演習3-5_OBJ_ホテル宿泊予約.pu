@@ -1,4 +1,4 @@
-@startuml 演習3-5オブジェクト図
+@startuml 演習3-5
 left to right direction
 object "<u>利用者情報1:利用者</u>" as case1_1{
     名前=A
