@@ -1,0 +1,32 @@
+@startuml 演習4-4シーケンス図
+hide footbox
+autonumber
+skinparam style strictuml
+
+actor ":受注係" as user
+participant "<u>:注文登録画面</u>" as order_screen <<boundary>>
+participant "<u>:商品</u>" as item <<entity>>
+
+activate user
+user -> order_screen:商品情報確認()
+    activate order_screen
+    
+        activate item
+        order_screen -> item:商品情報取得()
+        order_screen <-- item:商品情報を返す
+        deactivate item
+        
+        order_screen -> order_screen:商品情報表示(商品情報)
+        activate order_screen
+        deactivate order_screen
+    deactivate order_screen
+
+user -> order_screen:商品登録(注文情報)
+    activate order_screen
+    create "<u>:注文</u>" as order <<entity>>
+    order_screen --> order :<<create>>生成()
+    activate order
+    deactivate order
+deactivate user
+        
+@enduml

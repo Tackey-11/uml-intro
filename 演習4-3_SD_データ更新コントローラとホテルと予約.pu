@@ -1,0 +1,21 @@
+@startuml 4-3シーケンス図
+hide footbox
+autonumber
+skinparam style strictuml
+
+participant "<u>controller:データ更新コントローラ</u>" as control
+participant "<u>hotel:ホテル</u>" as hotel
+
+
+activate control
+    activate hotel
+    control -> hotel:予約登録()
+    create "<u>予約:</u>" as yoyaku
+            hotel -> yoyaku:<<create>>予約生成()
+            hotel -> hotel:予約登録()
+            activate hotel
+    control <-- hotel:予約結果
+    deactivate hotel
+deactivate control
+
+@enduml
