@@ -28,7 +28,7 @@ user -> browser:画像のリンクボタンを押す()
         browser <-- WebServer:画像ファイル
         deactivate WebServer
 
-    user <-- browser:画像
+    user <-- browser:画像ファイルを再生
     deactivate browser
 
 deactivate user
