@@ -1,0 +1,35 @@
+@startuml 演習4-6シーケンス図
+hide footbox
+autonumber
+skinparam style strictuml
+
+actor ":ユーザ" as user
+participant ":ブラウザ" as browser
+participant ":Webサーバ" as WebServer
+participant ":画像サーバ" as ImageServer
+
+activate user
+user -> browser:画像のリンクボタンを押す()
+    activate browser
+    browser -> WebServer:検索(ファイル名)
+
+        activate WebServer
+        WebServer -> ImageServer:検索(ファイル名)
+
+            activate ImageServer
+            ImageServer -> ImageServer:画像ファイルを検索()
+
+                activate ImageServer
+                WebServer <-- ImageServer:画像ファイル
+                deactivate ImageServer
+            
+            deactivate ImageServer
+        
+        browser <-- WebServer:画像ファイル
+        deactivate WebServer
+
+    user <-- browser:画像
+    deactivate browser
+
+deactivate user
+@enduml

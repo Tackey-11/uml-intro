@@ -1,15 +1,15 @@
 @startuml 演習3-7オブジェクト図
 left to right direction
-object "<u>重要顧客1:重要顧客</u>" as actor1{
+object "<u>高橋洋平:重要顧客</u>" as actor1{
     名前=高橋洋平
     住所
 }
 
-object "<u>顧客2:顧客</u>" as actor2{
+object "<u>高田利惠:顧客</u>" as actor2{
     名前=高田利惠
     住所
 }
-object "<u>顧客3:顧客</u>" as actor3{
+object "<u>大坪直之:顧客</u>" as actor3{
     名前=大坪直之
     住所
 }
@@ -30,25 +30,25 @@ object "<u>注文3:注文</u>" as case3{
 }
 
 
-object "<u>テレビ:商品</u>" as item1{
+object "<u>商品1:商品1</u>" as item1{
     商品名=テレビ
     型式=V12345
 }
-object "<u>テレビ:商品</u>" as item1_1{
+object "<u>商品2:商品</u>" as item1_1{
     商品名=テレビ
     型式=V12345
 }
 
-object "<u>冷蔵庫:商品</u>" as item2{
+object "<u>商品3:商品</u>" as item2{
     商品名=冷蔵庫
     型式=R8765
 }
-object "<u>冷蔵庫:商品</u>" as item2_1{
+object "<u>商品4:商品</u>" as item2_1{
     商品名=冷蔵庫
     型式=R8765
 }
 
-object "<u>プロジェクタ:商品</u>" as item3{
+object "<u>商品5:商品</u>" as item3{
     商品名=プロジェクタ
     型式=P1122
 }
