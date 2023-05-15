@@ -30,7 +30,7 @@ object "<u>注文3:注文</u>" as case3{
 }
 
 
-object "<u>商品1:商品1</u>" as item1{
+object "<u>商品1:商品</u>" as item1{
     商品名=テレビ
     型式=V12345
 }
