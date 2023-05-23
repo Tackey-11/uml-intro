@@ -1,0 +1,19 @@
+@startuml 6-3ユースケース図
+left to right direction
+actor 患者  
+actor 看護師
+
+rectangle 病院の診察予約システム{
+    usecase 予約 as case1
+    usecase あなたの順番を確認 as case2
+    usecase 予約取消 as case3
+    usecase 今の順番の確認 as case4
+}
+
+患者 --> case1
+患者 --> case2
+患者 --> case3
+患者 --> case4
+case4 <-- 看護師
+
+@enduml
