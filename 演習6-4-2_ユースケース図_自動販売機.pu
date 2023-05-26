@@ -1,0 +1,15 @@
+@startuml 6-4ユースケース図
+left to right direction
+actor 客
+actor ベンダー
+
+rectangle 自動販売機{
+    usecase ドリンクを購入する as case1
+    usecase お金を入れる as case2
+    usecase 料金を回収する as case3
+}
+
+case1 ..> case2 :<<include>>
+客 --> case1
+ベンダー --> case3
+@enduml

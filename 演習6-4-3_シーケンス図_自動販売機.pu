@@ -1,0 +1,30 @@
+@startuml 6-4シーケンス図
+hide footbox
+autonumber
+skinparam style strictuml
+
+actor "<u>:客</u>" as user
+participant "<u>:料金装置</u>" as money
+participant "<u>:ボタン</u>" as button
+participant "<u>:ベンダー装置</u>" as vendor
+
+activate user
+user -> money :料金を入れる
+    activate money
+        user <-- money :ボタン入力待ち状態
+    deactivate money
+
+        user -> button :欲しいドリンクのボタンを押す
+        activate button
+            button -> vendor :ドリンク排出命令
+        deactivate button
+        
+            activate vendor
+            deactivate vendor
+
+            vendor -> vendor :ドリンクを出す
+            user <-- vendor :ドリンク
+
+deactivate user
+
+@enduml
