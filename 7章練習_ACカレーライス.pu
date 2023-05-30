@@ -1,0 +1,24 @@
+@startuml カレーライス
+title カレーライス作り
+
+start
+:材料を準備;
+:米をとぐ;
+:具材(肉・野菜)を切る;
+:具材を炒める;
+note right
+    肉から炒める
+end note
+fork
+    :具材を煮込む;
+    :ルウを入れて煮込む;
+    :カレー;
+    forkagain
+        :米を炊く;
+        :ご飯]
+    endfork
+:皿に盛る;
+:カレーライス]
+stop
+
+@enduml

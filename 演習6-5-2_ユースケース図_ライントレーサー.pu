@@ -1,0 +1,15 @@
+@startuml 6-5ユースケース図
+left to right direction
+
+actor ユーザー
+actor 光センサー
+actor モータ
+
+rectangle ライントレーサーシステム{
+    usecase ラインの右境界線上を進む as case
+}
+
+ユーザー --> case
+case <-- 光センサー
+モータ --> case
+@enduml
