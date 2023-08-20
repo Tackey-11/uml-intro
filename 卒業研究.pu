@@ -1,5 +1,5 @@
 @startuml ユースケース図
-
+left to right direction
 
 actor ユーザー#DDDDDD;line:black;line.bold;
 actor 管理者#DDDDDD;line:black;line.bold;
