@@ -1,0 +1,67 @@
+@startuml ユースケース図
+
+actor 利用者#DDDDDD;line:black;line.bold;
+actor 管理者#DDDDDD;line:black;line.bold;
+
+rectangle 勉強支援アプリ {
+usecase ログイン
+usecase ログアウト
+
+usecase アカウント登録
+usecase アカウント情報の編集
+usecase アカウント削除
+
+usecase お気に入り登録
+
+usecase カレンダー登録
+usecase カレンダー編集
+
+usecase todoリスト作成
+usecase todoリスト編集
+usecase todoリスト削除
+
+usecase 検索
+
+usecase 投稿とコメント
+usecase 投稿とコメントの削除
+usecase 投稿とコメントの閲覧
+
+usecase 学習ルーム作成
+usecase 学習ルーム編集
+usecase 学習ルーム削除
+
+usecase 学習ルームの利用
+}
+
+利用者 --> ログイン
+利用者 --> ログアウト
+利用者 --> アカウント登録
+利用者 --> アカウント情報の編集
+利用者 --> アカウント削除
+利用者 --> お気に入り登録
+利用者 --> カレンダー登録
+利用者 --> カレンダー編集
+利用者 --> todoリスト作成
+利用者 --> todoリスト編集
+利用者 --> todoリスト削除
+利用者 --> 検索
+利用者 --> 投稿とコメント
+利用者 --> 投稿とコメントの削除
+利用者 --> 投稿とコメントの閲覧
+利用者 --> 学習ルームの利用
+
+管理者 -up-> ログイン
+管理者 -up-> ログアウト
+管理者 -up-> アカウント登録
+管理者 -up-> アカウント情報の編集
+管理者 -up-> アカウント削除
+管理者 -up-> 検索
+管理者 -up-> 投稿とコメント
+管理者 -up-> 投稿とコメントの削除
+管理者 -up-> 投稿とコメントの閲覧
+管理者 -up-> 学習ルーム作成
+管理者 -up-> 学習ルーム編集
+管理者 -up-> 学習ルーム削除
+
+
+@enduml
